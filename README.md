@@ -1,11 +1,4 @@
-# CasinoPlatform – N-Tier skeleton (ASP.NET Core 8 Web API + MySQL)
-
-```
-CasinoPlatform.API  ──►  CasinoPlatform.Services  ──►  CasinoPlatform.Core
-        │                                                   ▲
-        └────────►  CasinoPlatform.Infrastructure  ─────────┘
-```
-
+# CasinoPlatform
 ## MySQL
 
 Provider: `Pomelo.EntityFrameworkCore.MySql`. Connection string a verze serveru jsou v `src/CasinoPlatform.API/appsettings.json`
@@ -31,7 +24,3 @@ Package Manager Console:
 Add-Migration InitialCreate -Project CasinoPlatform.Infrastructure -StartupProject CasinoPlatform.API -OutputDir Data/Migrations
 Update-Database -Project CasinoPlatform.Infrastructure -StartupProject CasinoPlatform.API
 ```
-
-## .NET 9
-
-`net8.0` → `net9.0`, EF Core a `Microsoft.Extensions.Configuration.*` → `9.0.x`, Pomelo → `9.0.0`.
